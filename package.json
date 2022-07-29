@@ -1,0 +1,29 @@
+{
+  "name": "learn-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --transpile-only --no-notify --exit-child src/index.ts",
+    "generate": "ts-node --transpile-only src/schema.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.6.0",
+    "apollo-server": "^3.10.0",
+    "apollo-server-core": "^3.10.0",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "graphql": "^15.8.0",
+    "graphql-tools": "^8.3.0",
+    "notarealdb": "^0.2.2"
+  }
+}

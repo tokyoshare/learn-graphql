@@ -1,0 +1,13 @@
+type Query {
+    greeting:String
+    sayHello(name:String!):String
+    students:[Student]
+    student(id:ID):Student
+    setFavouriteColor(color:ColorType):String
+}
+
+type Mutation{
+    student(collegeId:ID, firstName: String, lastName: String):String
+    updateStudent(id:ID, collegeId:String, firstName:String, lastName:String):Student
+    signUp(data: SignUpData):Student
+}

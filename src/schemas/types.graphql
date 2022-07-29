@@ -1,0 +1,31 @@
+enum ColorType{
+    RED
+    BLUE
+    GREEN
+}
+
+type College {
+    id: ID!
+    name: String
+    location: String
+    rating: Float
+}
+
+type Student {
+    id: ID!
+    firstName:String
+    lastName:String
+    email: String
+    password:String
+    collegeId:String
+    #Custom fields
+    fullName: String
+    college: College
+}
+
+input SignUpData{
+    email: String! 
+    password: String!
+    firstName: String!
+    lastName: String!
+}
